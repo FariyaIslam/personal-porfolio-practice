@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 20px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, rgb(255, 56, 56), rgb(42, 42, 200));  
+    animation: color-change 3s infinite;
+    /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+      background: linear-gradient(to top,  rgb(116, 22, 116), rgba(2, 132, 192, 0.712)); /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid none;  /* creates padding around scroll thumb */
+  }
+@keyframes color-change {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* global classes */
+.btn {
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: rgb(236, 33, 111);
+    color: whitesmoke;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+p {
+    color: dimgray;
+    margin: 2rem 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.header__h2 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+.jack {
+    color: rgb(236, 33, 111);
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 0.3rem;
+    display: block;
+    margin: 1rem 0 0 0;
+}
+
+.header__section {
+    height: 100vh;
+    background-image: url("images/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+
+}
+
+.header__parent {
+    display: flex;
+}
+.header__content {
+    width: 50%;
+    padding: 15rem 1rem 2rem 12rem;
+
+}
+.header__image{
+    width: 50%;
+    margin: 0 1rem;
+}
+.header__image img {
+    width: 100%;
+    padding: 5rem 10rem 2rem 2rem;
+}
+
+.biography {
+    height: 100vh;
+    margin-bottom: 10rem;
+    
+}
+
+.biography__parent {
+    display: flex;
+    background-image: url("images/biography-bg.png");
+}
+.biography__content {
+    width: 50%;
+    padding: 12rem 9rem 8rem 2rem;
+}
+.biography__image {
+    width: 50%;
+    margin: 0 1rem;
+
+}
+.biography__image img {
+    width: 95%;
+    padding: 5rem 1rem 2rem 8rem;
+}
+.biography__content h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.work {
+    height: 100vh;
+    margin: 2rem 0;
+}
+.work__parent {
+    display: flex;
+    padding: 0 3rem;
+    background-image: url("images/latest-work-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+.work h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+.work__parent img {
+    width: 100%;
+}
+.w1 {
+    padding: 4rem 1rem;
+}
+.w2{
+    padding: 4rem 1rem;
+}
+.w3 {
+    padding: 4rem 1rem;
+}
+.clients {
+    height: 90vh;
+    margin-bottom: 4rem;
+    background-image: url("images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.clients__parent {
+    text-align: center;
+}
+.clients__parent h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+.clients__parent h4 {
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0.3rem 0;
+}
+
+.clients__parent h5 {
+    font-size: 0.7rem;
+    color: dimgray;
+}
+.clients__parent h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0 15rem 0 15rem;
+    margin: 2rem 0;
+    
+}
+.clinets__btn {
+    padding:60px 200px;
+    border-radius: 8px;
+    background: rgb(233, 83, 140);
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    font-weight: 500;
+    animation: color-change 8s infinite;
+}
+
+footer p {
+ 
+    text-align: center;
+    color: dimgray;
+    font-size: 15px;
+
+
+   
+}
